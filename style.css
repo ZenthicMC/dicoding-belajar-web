@@ -1,0 +1,246 @@
+:root {
+   --primary: #0B1D2B;
+   --secondary: #1A2636;
+}
+
+*,p {
+   padding: 0;
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+img { vertical-align: top }
+
+body {
+   overflow-x: hidden;
+   background-color: var(--primary);
+}
+
+.header {
+   width: 100%;
+   height: auto;
+}
+
+.navbar {
+   width: 100%;
+   color: white;
+   padding: 20px 0px;
+}
+
+.brand {
+   width: 60%;
+   font-size: 25px;
+}
+
+.nav-item {
+   width: 25%;
+   display: flex; 
+   justify-content: space-between;
+}
+
+.mobile-button {
+   width: 5%;
+   display: none;
+}
+
+
+.nav-link {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+   padding: 10px;
+}
+
+.mobile-btn {
+   background-color: inherit;
+   color: white;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   font-size: 20px;
+   padding: 8px;
+}
+
+.jagad {
+   display: flex;
+}
+
+.about {
+   margin-top: 30px;
+}
+
+.about-me {
+   width: 75%;
+   margin-top: 5%;
+}
+
+.my-name {
+   font-size: 45px;
+   font-weight: bold;
+   color: white;
+   letter-spacing: 2px;
+}
+
+.my-job {
+   font-size: 20px;
+   color: white;
+   letter-spacing: 2px;
+   margin-top: 10px;
+}
+
+.my-buttons {
+   margin-top: 40px;
+   display: flex;
+}
+
+.contact-btn1 {
+   background-color: var(--primary);
+   color: white;
+   border: 2px solid white;
+   padding: 8px;
+   width: 130px;
+   font-size: 18px;
+   height: auto;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.contact-btn2 {
+   background-color: white;
+   color: var(--primary);
+   border: 2px solid white;
+   padding: 8px;
+   width: 130px;
+   font-size: 18px;
+   height: auto;
+   border-radius: 10px;
+   margin-left: 15px;
+   cursor: pointer;
+}
+
+.picture {
+   width: 35%;
+   position: relative;
+}
+
+.profile {
+   width: 300px;
+   height: auto;
+   border-radius: 50%;
+   margin-top: 10%;
+}
+
+.blob {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   bottom: -8%;
+}
+
+.desc {
+   width: 100%;
+   height: auto;
+   margin-top: 10%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.about-me-desc {
+   width: 45%;
+}
+
+.icon {
+   font-size: 30px;
+}
+
+.social-medias {
+   width: 100%;
+   display: flex;
+}
+
+.footer {
+   width: 100%;
+   height: auto;
+   background-color: var(--secondary);
+   padding: 10px 0px;
+   color: white;
+   text-align: center;
+   margin-top: 5%;
+}
+
+@media (max-width: 1024px) {
+   .container {
+      width: 80%;
+   }
+   .nav-item {
+      display: none;
+   }
+   
+   .brand {
+      width: 50%;
+   }
+
+   .mobile-button {
+      width: 20%;
+      display: flex;
+   }
+
+   .mobile-links {
+      margin-top: 20px;
+   }
+
+   .about {
+      margin-top: 10px;
+   }
+
+   .about-me {
+      width: 100%;
+   }
+
+   .jagad {
+      flex-direction: column;
+   }
+
+   .picture {
+      width: 80%;
+      margin-top: 40px;
+   }
+
+   .blob {
+     right: -6%;
+     width: 70%;
+   }
+
+   .desc {
+      flex-direction: column;
+   }
+
+   .about-me-desc {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+   .picture {
+      width: 100%;
+      margin-top: 40px;
+   }
+
+   .profile {
+      width: 100%;
+      height: auto;
+      float: none;
+      position: relative;
+   }
+
+   .blob {
+      width: 100%;
+      right: -4%;
+   }
+}
